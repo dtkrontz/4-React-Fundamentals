@@ -7,6 +7,13 @@ const Stopwatch = () => {
     const [time, setTime] = useState(0);
     const [laps, setLaps] = useState([]);
 
+    useEffect(() => {
+      if(isRunning) {
+        const interval = setInterval(update, 10);
+        return () => {clearInterval(interval)}
+      }
+    });
+
     const start = () => {
         setIsRunning(true);
         startTimeRef.current = Date.now()
