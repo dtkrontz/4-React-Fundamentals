@@ -1,7 +1,7 @@
 import React from 'react';
 import TimerApp from './TimerApp';
 import ClockApp from './ClockApp';
-// import StopWatchApp from './StopWatchApp';
+import StopWatchApp from './StopWatchApp';
 
 const TimePiecesApp = () => {
 
@@ -12,8 +12,8 @@ const TimePiecesApp = () => {
                 <TimerApp />
                 <hr />
                 <ClockApp />
-                {/* <hr />
-                <StopWatchApp /> */}
+                <hr />
+                <StopWatchApp />
             </div>
         </div>
     );
